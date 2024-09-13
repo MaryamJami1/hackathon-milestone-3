@@ -41,7 +41,6 @@
   #name {
     font-size: 20px;
     padding: 5px;
-    animation: slideIn 2s ease-in-out forwards;
     opacity: 0;
     display: inline-block;
   }
@@ -287,5 +286,86 @@
       margin-left: 20vw
     }
   }
+
+
+
+
+  /* General Form Styles */
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f9f9f9;
+  transition: border 0.3s ease;
+}
+
+form input:focus, 
+form textarea:focus {
+  border-color: #1a2980; /* Border color on focus */
+  outline: none;
+  background-color: #fff;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #26d0ce;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #1a2980;
+}
+
+/* Responsive Layout */
+@media screen and (max-width: 780px) {
+  form {
+    padding: 15px;
+  }
+
+  form input, 
+  form textarea, 
+  form button {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  form h2 {
+    font-size: 20px;
+  }
+}
 
   
