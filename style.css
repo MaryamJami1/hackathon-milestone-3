@@ -341,4 +341,10 @@ form button:hover {
   form h2 {
       font-size: 20px;
   }
+
+
+  
+.hero::before {
+  background-size: cover;
+}
 }
