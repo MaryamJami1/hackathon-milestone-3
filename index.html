@@ -13,24 +13,31 @@
 
 <body>
 
+    <!-- Form for collecting resume data -->
     <form id="resume-form">
         <h2>Fill Your Details</h2>
 
+        <!-- Full Name -->
         <label for="name">Full Name:</label>
         <input type="text" id="name" required>
 
+        <!-- About Me -->
         <label for="about">About Me:</label>
         <textarea id="about" required></textarea>
 
+        <!-- Email -->
         <label for="email">Email:</label>
         <input type="email" id="email" required>
 
+        <!-- Phone Number -->
         <label for="phone">Phone Number:</label>
         <input type="tel" id="phone" required>
 
+        <!-- LinkedIn URL -->
         <label for="linkedin">LinkedIn URL:</label>
         <input type="url" id="linkedin" required>
 
+        <!-- Optional URLs -->
         <label for="facebook">Facebook URL:</label>
         <input type="url" id="facebook">
 
@@ -40,9 +47,11 @@
         <label for="github">GitHub URL:</label>
         <input type="url" id="github">
 
+        <!-- Skills -->
         <label for="skills">Skills (comma separated):</label>
         <input type="text" id="skills" required>
 
+        <!-- Job Experience -->
         <label for="experience-title">Job Title:</label>
         <input type="text" id="experience-title" required>
 
@@ -52,18 +61,21 @@
         <label for="experience-description">Description:</label>
         <textarea id="experience-description" required></textarea>
 
+        <!-- Hero Section Description -->
         <label for="hero-description">Hero Section Description:</label>
         <input type="text" id="hero-description" required>
         
-        <label for="image">Profile Image URL:</label>
-        <input type="url" id="image">
-
-
+        <!-- Profile Image Upload -->
+        <label for="image">Upload Profile Image:</label>
+        <input type="file" id="image" accept="image/*">
+        
         <button type="submit">Generate Resume</button>
     </form>
 
+    <!-- Container for displaying the generated resume -->
     <div class="main hidden" id="resume-display"></div>
 
+    <!-- Link to the JavaScript file -->
     <script src="app.js" type="module"></script>
 </body>
 
