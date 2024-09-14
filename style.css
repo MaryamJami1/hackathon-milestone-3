@@ -48,12 +48,13 @@ body {
 /* Keyframes for slide-in animation */
 @keyframes slideIn {
   0% {
-      transform: translateX(-100%);
-      opacity: 0;
+    transform: translateX(-100%);
+    opacity: 0;
   }
+
   100% {
-      transform: translateX(0);
-      opacity: 1;
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
@@ -88,6 +89,7 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
 
 .hero::before {
   content: "";
@@ -231,37 +233,41 @@ body {
 /* Responsive styles for smaller screens */
 @media (max-width: 750px) {
   #links {
-      display: none;
+    display: none;
   }
 
   #name {
-      font-size: 18px;
+    font-size: 18px;
   }
 
   #links.show {
-      display: flex;
+    display: flex;
   }
 
   #links li {
-      padding: 10px 0;
+    padding: 10px 0;
   }
 
   .hero-content h1 {
-      font-size: 1.7rem;
-      color: #16356A;
+    font-size: 1.7rem;
+    color: #16356A;
   }
 
   .hero-content .icons i {
-      color: #16356aa0;
-      font-size: 1.2rem;
+    color: #16356aa0;
+    font-size: 1.2rem;
   }
 
   .hero-content p {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   #toggle-button {
-      margin-left: 20vw;
+    margin-left: 20vw;
+  }
+
+  .hero::before {
+    background-size: cover;
   }
 }
 
@@ -290,7 +296,7 @@ form label {
   margin-bottom: 8px;
 }
 
-form input, 
+form input,
 form textarea {
   width: 100%;
   padding: 10px;
@@ -302,9 +308,10 @@ form textarea {
   transition: border 0.3s ease;
 }
 
-form input:focus, 
+form input:focus,
 form textarea:focus {
-  border-color: #1a2980; /* Border color on focus */
+  border-color: #1a2980;
+  /* Border color on focus */
   outline: none;
   background-color: #fff;
 }
@@ -328,23 +335,18 @@ form button:hover {
 /* Responsive layout for form */
 @media screen and (max-width: 780px) {
   form {
-      padding: 15px;
+    padding: 15px;
   }
 
-  form input, 
-  form textarea, 
+  form input,
+  form textarea,
   form button {
-      font-size: 12px;
-      padding: 10px;
+    font-size: 12px;
+    padding: 10px;
   }
 
   form h2 {
-      font-size: 20px;
+    font-size: 20px;
   }
 
-
-  
-.hero::before {
-  background-size: cover;
-}
 }
